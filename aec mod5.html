@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Viewer</title>
+  <link rel="stylesheet" href="stylebookstore.css">
+  <link rel="stylesheet" href="notescss.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_35.pdf')">Lecture 35</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_36_37.pdf')">Lecture 36,37</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_39.pdf')">Lecture 39</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_40.pdf')">Lecture 40</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_41.pdf')">Lecture 41</div>
+    <div class="button" onclick="viewPDF('./notes/Current source reference.pdf')">Current</div>
+    <div class="button" onclick="viewPDF('./notes/MOSFET Constant Current Sources.pdf')">Constant Current</div>
+  </div>
+
+  <div class="viewer-container">
+    <embed src="./notes/AEC_Lec_35.pdf" type="application/pdf" class="pdf-viewer" id="pdfViewer">
+  </div>
+
+  <script>
+    function viewPDF(pdfPath) {
+      document.getElementById('pdfViewer').src = pdfPath;
+    }
+  </script>
+
+</body>
+</html>

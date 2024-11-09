@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Viewer</title>
+  <link rel="stylesheet" href="stylebookstore.css">
+  <link rel="stylesheet" href="notescss.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="button" onclick="viewPDF('./notes/1.LPP-Basic Solutions.pdf')">LPP Basic</div>
+    <div class="button" onclick="viewPDF('./notes/2.LPP - Standard Form.pdf')">LPP Standard</div>
+    <div class="button" onclick="viewPDF('./notes/3. LPP - Simplex Method.pdf')">LPP Simplex</div>
+    <div class="button" onclick="viewPDF('./notes/4.LPP- Big M method.pdf')">LPP Big M</div>
+    <div class="button" onclick="viewPDF('./notes/5. LPP - Big M method-2.pdf')">LPP Big M 2</div>
+    <div class="button" onclick="viewPDF('./notes/6. LPP-Duality.pdf')">LPP Duality</div>
+    <div class="button" onclick="viewPDF('./notes/7. NLPP-without constraint.pdf')">NLPP without Contraints</div>
+    <div class="button" onclick="viewPDF('./notes/8. NLPP-Lagrangian Method.pdf')">NLPP Langrangian</div>
+    <div class="button" onclick="viewPDF('./notes/9. NLPP-Kuhn Tucker Conditions.pdf')">LPP Kuhn Tucker</div>
+    <div class="button" onclick="viewPDF('./notes/SIMPLEX METHOD FLOW CHART.pdf')">Simplex Flowchart</div>
+  </div>
+
+  <div class="viewer-container">
+    <embed src="./notes/1.SAMPLING- introduction.pdf" type="application/pdf" class="pdf-viewer" id="pdfViewer">
+  </div>
+
+  <script>
+    function viewPDF(pdfPath) {
+      document.getElementById('pdfViewer').src = pdfPath;
+    }
+  </script>
+
+</body>
+</html>

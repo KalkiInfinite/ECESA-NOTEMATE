@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+  body {
+      font-family: 'Kanit', sans-serif;
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(to right, #1b77a1, #2044e4, #170f4f, #8114e8);
+      background-size: 400% 400%;
+      animation: gradientAnimation 15s ease infinite;
+      color: #fff;
+  }
+  
+  @keyframes gradientAnimation {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
+  
+  .module-container {
+      width: 100vw;
+      display: grid;
+      grid-template-columns: repeat(3, 500px);
+      align-content: center;
+      justify-content: center;
+      justify-items: center;
+      row-gap: 20px;
+      border-radius: 5px;
+      gap: 20px;
+ 
+  }
+  
+  .module {
+     
+      border-radius: 9px;
+      padding: 20px;
+      margin: 20px;
+      width: 250px;
+      border: 1px solid antiquewhite;
+      box-shadow: 0 0 10px rgba(228, 159, 159, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      /* From https://css.glass */
+/* background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3); */
+background: rgba(255, 255, 255, 0.09);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .module h2 {
+      margin-top: 0;
+  }
+  
+  .module button, button {
+      text-align: center;
+      color: #5a7fa1;
+      background-color: rgb(164, 213, 255);
+      border-radius: 9px;
+      padding: 4px 9px;
+      font-size: 20px;
+      border: none;
+      margin-top: 9px;
+      transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+  
+  button:hover {
+      background-color: #12aef1;
+      transform: scale(1.1);
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  button:active {
+      background-color: #3fd5ff;
+      transform: scale(0.9);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+      padding-left: 85px;
+      margin: 40px 0px 0px 20px;
+  }
+  
+  .navbar-container {
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  .navbar-title h1 {
+      margin: 0;
+      padding: 8px 16px;
+      font-size: 24px;
+      font-weight: bold;
+  }
+  
+  .navbar-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0 10px;
+  }
+  
+  .navbar-links a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .navbar-links a:hover {
+      background-color: #12aef1;
+      transform: scale(1.1);
+  }
+  
+  .content {
+      padding: 20px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.6;
+  }
+  
+  .main-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+  }
+  
+  .welcome-section {
+      max-width: 600px;
+      text-align: left;
+      padding-left: 200px;
+      padding-top: 200px;
+  }
+  
+  .welcome-section h5 {
+      color: #c2bfd0;
+      font-size: 18px;
+      margin-bottom: 10px;
+  }
+  
+  .welcome-section h1 {
+      font-size: 48px;
+      font-weight: bold;
+      margin: 0;
+      line-height: 1.2;
+  }
+  
+  .welcome-section p {
+      font-size: 18px;
+      margin: 20px 0;
+  }
+  
+  .about-us-section {
+      padding: 400px 20px;
+      text-align: center;
+  }
+  
+  .about-us-section h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+  }
+  
+  .about-us-section p {
+      font-size: 18px;
+      line-height: 1.6;
+  }
+  
+  .meet-our-members-section {
+      padding: 40px 20px;
+      text-align: center;
+  }
+  
+  .meet-our-members-section h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+  }
+  
+  .meet-our-members-section label {
+      font-size: 18px;
+      margin-right: 10px;
+  }
+  
+  .meet-our-members-section select {
+      font-size: 16px;
+      background-color: #6a6a6a;
+      padding: 5px 10px;
+      border-radius: 4px;
+      width: 40%;
+      max-width: 600px;
+      margin: 0 auto;
+  }
+  
+  .description {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #333;
+      text-align: center;
+  }
+  
+  .footer {
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      width: 100%;
+      bottom: 0;
+  }

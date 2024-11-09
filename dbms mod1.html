@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Viewer</title>
+  <link rel="stylesheet" href="stylebookstore.css">
+  <link rel="stylesheet" href="notescss.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="button" onclick="viewPDF('./notes/Module_5_FD and Normalization.pdf')">L1</div>
+    <div class="button" onclick="viewPDF('./notes/concurrency korth imp.pdf')">Mod 1.1</div>
+    <div class="button" onclick="viewPDF('./notes/intermediate sql korth.pdf')">ER</div>
+    <div class="button" onclick="viewPDF('./notes/normalisation.pdf')">L1</div>
+    <div class="button" onclick="viewPDF('./notes/recovery extra.pdf')">Mod 1</div>
+    <div class="button" onclick="viewPDF('./notes/intermediate sql korth.pdf')">ER</div>
+    <div class="button" onclick="viewPDF('./notes/normalisation.pdf')">L1</div>
+    <div class="button" onclick="viewPDF('./notes/recovery extra.pdf')">Mod 1</div>
+    <div class="button" onclick="viewPDF('./notes/DBMS-NOTES.pdf')">Mod 1</div>
+  </div>
+
+  <div class="viewer-container">
+    <embed src="./notes/Module_1.1.pdf" type="application/pdf" class="pdf-viewer" id="pdfViewer">
+  </div>
+
+  <script>
+    function viewPDF(pdfPath) {
+      document.getElementById('pdfViewer').src = pdfPath;
+    }
+  </script>
+
+</body>
+</html>

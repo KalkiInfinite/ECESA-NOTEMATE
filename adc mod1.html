@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Viewer</title>
+  <link rel="stylesheet" href="stylebookstore.css">
+  <link rel="stylesheet" href="notescss.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="button" onclick="viewPDF('./notes/Module 1.pdf')">AM</div>
+    <div class="button" onclick="viewPDF('./notes/1.1 AM  Generation.pdf')">Generation</div>
+    <div class="button" onclick="viewPDF('./notes/1.1 AM Detection.pdf')">Detection</div>
+    <div class="button" onclick="viewPDF('./notes/1.1 AM Formula.pdf')">Formula</div>
+    <div class="button" onclick="viewPDF('./notes/1.2 DSBSC GENERATION Methods.pdf')">DSBFC</div>
+    <div class="button" onclick="viewPDF('./notes/1.3 SSB VSB ISB.pdf')">SSB VS ISB</div>
+    <div class="button" onclick="viewPDF('./notes/Proublems.pdf')">Problems</div>
+    <div class="button" onclick="viewPDF('./notes/ADC DSBFC TRANSMITTER.pdf')">Transmitter</div>
+  </div>
+
+  <div class="viewer-container">
+    <embed src="./notes/Module 1.pdf" type="application/pdf" class="pdf-viewer" id="pdfViewer">
+  </div>
+
+  <script>
+    function viewPDF(pdfPath) {
+      document.getElementById('pdfViewer').src = pdfPath;
+    }
+  </script>
+
+</body>
+</html>

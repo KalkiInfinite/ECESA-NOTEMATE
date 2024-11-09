@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Viewer</title>
+  <link rel="stylesheet" href="stylebookstore.css">
+  <link rel="stylesheet" href="notescss.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="button" onclick="viewPDF('./notes/Algorithms Design and Analysis (Udit Agarwal).pdf')">Book 1</div>
+  </div>
+
+  <div class="viewer-container">
+    <embed src="./notes/Algorithms Design and Analysis (Udit Agarwal).pdf" type="application/pdf" class="pdf-viewer" id="pdfViewer">
+  </div>
+
+  <script>
+    function viewPDF(pdfPath) {
+      document.getElementById('pdfViewer').src = pdfPath;
+    }
+  </script>
+
+</body>
+</html>

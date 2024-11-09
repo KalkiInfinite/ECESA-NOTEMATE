@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Viewer</title>
+  <link rel="stylesheet" href="stylebookstore.css">
+  <link rel="stylesheet" href="notescss.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="button" onclick="viewPDF('./notes/1. Introduction to Laplace Transform.pdf')">Laplace</div>
+    <div class="button" onclick="viewPDF('./notes/2. Problems based on Basic formulae.pdf')">Problems</div>
+    <div class="button" onclick="viewPDF('./notes/3. First Shifting theorem.pdf')">1st Shifting</div>
+    <div class="button" onclick="viewPDF('./notes/4. Effect of multiplication by t.pdf')">Mul by t</div>
+    <div class="button" onclick="viewPDF('./notes/5. effect of division by t.pdf')">Div by t</div>
+    <div class="button" onclick="viewPDF('./notes/6. Laplace transform of Derivative.pdf')">Derivative</div>
+    <div class="button" onclick="viewPDF('./notes/7. Laplace transform of integral.pdf')">Integral</div>
+    <div class="button" onclick="viewPDF('./notes/8. Evaluation of particular integral.pdf')">Particular Integral</div>
+    <div class="button" onclick="viewPDF('./notes/9. Introduction to inverse Laplace Transform.pdf')">Inverse</div>
+    <div class="button" onclick="viewPDF('./notes/10.Examples on Inverse Laplace Transform.pdf')">Inverse Examples</div>
+    <div class="button" onclick="viewPDF('./notes/11.Examples Using Partial Fraction Method.pdf')">Partial Fraction</div>
+    <div class="button" onclick="viewPDF('./notes/12.Convolution Theorem.pdf')">Convolution</div>
+    <div class="button" onclick="viewPDF('./notes/13.Use of differentiation of ∅(s).pdf')">Differentation of ∅(s)</div>
+    <div class="button" onclick="viewPDF('./notes/14.PERIODIC FUNCTIONS.pdf')">Periodic</div>
+    <div class="button" onclick="viewPDF('./notes/15.Heaviside’s Unit Step Function.pdf')">Heaviside</div>
+    <div class="button" onclick="viewPDF('./notes/16.Dirac Delta Function.pdf')">Dirac Delta</div>
+    <div class="button" onclick="viewPDF('./notes/17.solving differential equations.pdf')">Diff Examples</div>
+  </div>
+
+
+  <div class="viewer-container">
+    <embed src="./notes/1. Introduction to Laplace Transform.pdf" class="pdf-viewer" id="pdfViewer">
+  </div>
+
+  <script>
+    function viewPDF(pdfPath) {
+      document.getElementById('pdfViewer').src = pdfPath;
+    }
+  </script>
+
+</body>
+</html>

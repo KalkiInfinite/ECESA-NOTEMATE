@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Viewer</title>
+  <link rel="stylesheet" href="stylebookstore.css">
+  <link rel="stylesheet" href="notescss.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_01.pdf')">Lecture 1</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_01_markings.pdf')">Lecture 1 </div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_02.pdf')">Lecture 2</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_03.pdf')">Lecture 3</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_03_markings.pdf')">Lecture 3</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_04.pdf')">Lecture 4</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_05.pdf')">Lecture 5</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_05_markings.pdf')">Lecture 5</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_06.pdf')">Lecture 6</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_07.pdf')">Lecture 7</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_08.pdf')">Lecture 8</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_09.pdf')">Lecture 9</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_10.pdf')">Lecture 10</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_11.pdf')">Lecture 11</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_11_markings.pdf')">Lecture 11</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_12.pdf')">Lecture 12</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_12_CE_amplifier.pdf')">Lecture 12</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_13.pdf')">Lecture 13</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_13_markings.pdf')">Lecture 13</div>
+    <div class="button" onclick="viewPDF('./notes/BC547B Datasheet.pdf')">Datasheet</div>
+    <div class="button" onclick="viewPDF('./notes/BJT fundamentals.pdf')">BJT 1</div>
+    <div class="button" onclick="viewPDF('./notes/BJT fundamentals1.pdf')">BJT 2</div>
+  </div>
+
+  <div class="viewer-container">
+    <embed src="./notes/AEC_Lec_01.pdf" type="application/pdf" class="pdf-viewer" id="pdfViewer">
+  </div>
+
+  <script>
+    function viewPDF(pdfPath) {
+      document.getElementById('pdfViewer').src = pdfPath;
+    }
+  </script>
+
+</body>
+</html>

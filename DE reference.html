@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document Viewer</title>
+    <link rel="stylesheet" href="stylebookstore.css" />
+    <link rel="stylesheet" href="notescss.css" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div
+        class="button"
+        onclick="viewPDF('./notes/Digital Design With an Introduction to the Verilog HDL  5th ED.pdf')"
+      >
+        Digital Design With an Introduction to the Verilog HDL
+      </div>
+      <div
+        class="button"
+        onclick="viewPDF('./notes/DIGITAL LOGIC DESIGN (R17A0461).pdf')"
+      >
+        Digital Logic Design
+      </div>
+      <div
+        class="button"
+        onclick="viewPDF('./notes/Modern Digital Electronics.pdf')"
+      >
+        Modern Digital Electronics
+      </div>
+    </div>
+
+    <div class="viewer-container">
+      <embed
+        src="./notes/Digital Design With an Introduction to the Verilog HDL  5th ED.pdf"
+        type="application/pdf"
+        class="pdf-viewer"
+        id="pdfViewer"
+       
+      />
+    </div>
+
+    <script>
+      function viewPDF(pdfPath) {
+        document.getElementById("pdfViewer").src = pdfPath;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Viewer</title>
+  <link rel="stylesheet" href="stylebookstore.css">
+  <link rel="stylesheet" href="notescss.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="button" onclick="viewPDF('./notes/Linked List.pdf')">Linked List</div>
+    <div class="button" onclick="viewPDF('./notes/Module 2_ LL.pdf')">LL</div>
+    <div class="button" onclick="viewPDF('./notes/Module 2_ LL, Stacks and Queues.pptx.pdf')">L, S & Q</div>
+    <div class="button" onclick="viewPDF('./notes/Module 2_ LL, Stacks and Queues.pptx_removed.pdf')">L, S & Q 2</div>
+    <div class="button" onclick="viewPDF('./notes/Module 2_ Stacks.pdf')">Stacks</div>
+    <div class="button" onclick="viewPDF('./notes/Stack(MOD 2).pdf')">Stack</div>
+    <div class="button" onclick="viewPDF('./notes/Queu(Mod 2)(i have used short forms so read carefully).pdf')">Queues</div>
+    <div class="button" onclick="viewPDF('./notes/2.1.linked list.pdf')">LL</div>
+    <div class="button" onclick="viewPDF('./notes/2.2.Stacks and qeue.pdf')">S&Q</div>
+  </div>
+
+
+  <div class="viewer-container">
+    <embed src="./notes/Linked List.pdf" class="pdf-viewer" id="pdfViewer">
+  </div>
+
+  <script>
+    function viewPDF(pdfPath) {
+      document.getElementById('pdfViewer').src = pdfPath;
+    }
+  </script>
+
+</body>
+</html>

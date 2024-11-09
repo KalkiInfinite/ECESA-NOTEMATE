@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Viewer</title>
+  <link rel="stylesheet" href="stylebookstore.css">
+  <link rel="stylesheet" href="notescss.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="button" onclick="viewPDF('./notes/Data Structures - Introduction.pptx.pdf')">DS</div>
+    <div class="button" onclick="viewPDF('./notes/1.Introduction to data structures.pdf')">Intro</div>
+    <div class="button" onclick="viewPDF('./notes/DS_Module 1 & LL.pdf')">MOD 1 & LL</div>
+    <div class="button" onclick="viewPDF('./notes/DS_Module 1.pptx.pdf')">MOD 1</div>
+  </div>
+
+
+  <div class="viewer-container">
+    <embed src="./notes/Data Structures - Introduction.pptx.pdf" class="pdf-viewer" id="pdfViewer">
+  </div>
+
+  <script>
+    function viewPDF(pdfPath) {
+      document.getElementById('pdfViewer').src = pdfPath;
+    }
+  </script>
+
+</body>
+</html>

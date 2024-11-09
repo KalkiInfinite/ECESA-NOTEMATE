@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Viewer</title>
+  <link rel="stylesheet" href="stylebookstore.css">
+  <link rel="stylesheet" href="notescss.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="button" onclick="viewPDF('./notes/Hon_CSF_SVU_Format Updated_19042024_01.pdf')">CSF</div>
+    <div class="button" onclick="viewPDF('./notes/Hon_DSA_SVU_Format Updated 19-04-2024.pdf')">DSA</div>
+    <div class="button" onclick="viewPDF('./notes/Honors_AI, Computer Vision & Robotics.pdf')">AI</div>
+    <div class="button" onclick="viewPDF('./notes/Honours _Internet of Things.pdf')">IoT</div>
+    <div class="button" onclick="viewPDF('./notes/Honours_VLSI_EXCP_April_2024.pdf')">VLSI</div>
+  
+  </div>
+
+
+  <div class="viewer-container">
+    <embed src="./notes/Hon_CSF_SVU_Format Updated_19042024_01.pdf" class="pdf-viewer" id="pdfViewer">
+  </div>
+
+  <script>
+    function viewPDF(pdfPath) {
+      document.getElementById('pdfViewer').src = pdfPath;
+    }
+  </script>
+
+</body>
+</html>

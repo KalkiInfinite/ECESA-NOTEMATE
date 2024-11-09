@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Viewer</title>
+  <link rel="stylesheet" href="stylebookstore.css">
+  <link rel="stylesheet" href="notescss.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="button" onclick="viewPDF('./notes/1.Conditional Probability.pdf')">Conditional Probability</div>
+    <div class="button" onclick="viewPDF('./notes/2.Bayes theorem.pdf')">Bayes Theorem</div>
+    <div class="button" onclick="viewPDF('./notes/3.Joint probability distribution.pdf')">Joint probability distribution</div>
+    <div class="button" onclick="viewPDF('./notes/4.PROBABILITY DISTRIBUTION.pdf')">Probability Distribution</div>
+    <div class="button" onclick="viewPDF('./notes/5.BINOMIAL DISTRIBUTION.pdf')">Binomial</div>
+    <div class="button" onclick="viewPDF('./notes/6.POISSON DISTRIBUTION.pdf')">Poison Distribution</div>
+    <div class="button" onclick="viewPDF('./notes/7.NORMAL DISTRIBUTION.pdf')">Normal</div>
+    <div class="button" onclick="viewPDF('./notes/8.Exponential DISTRIBUTION.pdf')">Exponential</div>
+    <div class="button" onclick="viewPDF('./notes/9.UNIFORM DISTRIBUTION.pdf')">Uniform</div>
+  </div>
+
+  <div class="viewer-container">
+    <embed src="./notes/1.Conditional Probability.pdf" type="application/pdf" class="pdf-viewer" id="pdfViewer">
+  </div>
+
+  <script>
+    function viewPDF(pdfPath) {
+      document.getElementById('pdfViewer').src = pdfPath;
+    }
+  </script>
+
+</body>
+</html>

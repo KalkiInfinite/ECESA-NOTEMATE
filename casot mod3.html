@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Viewer</title>
+  <link rel="stylesheet" href="stylebookstore.css">
+  <link rel="stylesheet" href="notescss.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="button" onclick="viewPDF('./notes/1.SAMPLING- introduction.pdf')">Sampling</div>
+    <div class="button" onclick="viewPDF('./notes/2.LARGE SAMPLE TEST-1.pdf')">Large Sample Test 1</div>
+    <div class="button" onclick="viewPDF('./notes/3.LARGE SAMPLE TEST -2.pdf')">Large Sample Test 2</div>
+    <div class="button" onclick="viewPDF('./notes/4.SMALL SAMPLE TEST-1.pdf')">Small Sample Test 1</div>
+    <div class="button" onclick="viewPDF('./notes/5.SMALL SAMPLE TEST-2.pdf')">Small Sample Test 2</div>
+    <div class="button" onclick="viewPDF('./notes/6.SMALL SAMPLE TEST-3.pdf')">Small Sample Test 3</div>
+    <div class="button" onclick="viewPDF('./notes/𝜒^2- Test.pdf')">𝜒^2 Test</div>
+  </div>
+
+  <div class="viewer-container">
+    <embed src="./notes/1.SAMPLING- introduction.pdf" type="application/pdf" class="pdf-viewer" id="pdfViewer">
+  </div>
+
+  <script>
+    function viewPDF(pdfPath) {
+      document.getElementById('pdfViewer').src = pdfPath;
+    }
+  </script>
+
+</body>
+</html>

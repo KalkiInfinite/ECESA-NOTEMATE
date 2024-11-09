@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Viewer</title>
+  <link rel="stylesheet" href="stylebookstore.css">
+  <link rel="stylesheet" href="notescss.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="button" onclick="viewPDF('./notes/3.1 AM Radio Receiver.pdf')">AM Radio Receiver</div>
+    <div class="button" onclick="viewPDF('./notes/3.1 Image frequency and its rejection-1.pdf')">Image Freq</div>
+    <div class="button" onclick="viewPDF('./notes/3.1 TRF.pdf')">TRF</div>
+    <div class="button" onclick="viewPDF('./notes/3.1. Basics of Radio Receiver.pdf')">Basics Of Raadio Receiver</div>
+    <div class="button" onclick="viewPDF('./notes/3.2 AGC.pdf')">AGC</div>
+    <div class="button" onclick="viewPDF('./notes/3.2 FM receiver.pdf')">FM Receiver</div>
+  </div>
+
+  <div class="viewer-container">
+    <embed src="./notes/3.1 AM Radio Receiver.pdf" type="application/pdf" class="pdf-viewer" id="pdfViewer">
+  </div>
+
+  <script>
+    function viewPDF(pdfPath) {
+      document.getElementById('pdfViewer').src = pdfPath;
+    }
+  </script>
+
+</body>
+</html>

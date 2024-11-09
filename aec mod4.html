@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Viewer</title>
+  <link rel="stylesheet" href="stylebookstore.css">
+  <link rel="stylesheet" href="notescss.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="button" onclick="viewPDF('./notes/AEC Module 4.1 handout 1.pdf')">Mod 3</div>
+    <div class="button" onclick="viewPDF('./notes/AEC Module 4.1 handout 2.pdf')">Mod 3</div>
+    <div class="button" onclick="viewPDF('./notes/AEC Module 4.1 handout 3.pdf')">Mod 3</div>
+    <div class="button" onclick="viewPDF('./notes/AEC Module 4.1 handout 4.pdf')">Mod 3</div>
+    <div class="button" onclick="viewPDF('./notes/AEC Module 4.1 handout 5.pdf')">Mod 3</div>
+    <div class="button" onclick="viewPDF('./notes/AEC Module 4.2 handout 1.pdf')">Mod 3</div>
+    <div class="button" onclick="viewPDF('./notes/AEC Module 4.2 handout 2.pdf')">Mod 3</div>
+    <div class="button" onclick="viewPDF('./notes/AEC Module 4.2 handout 3.pdf')">Mod 3</div>
+    <div class="button" onclick="viewPDF('./notes/AEC Module 4.2 handout 4.pdf')">Mod 3</div>
+    <div class="button" onclick="viewPDF('./notes/AEC Module 4.2 handout 5.pdf')">Mod 3</div>
+    <div class="button" onclick="viewPDF('./notes/AEC Module 4.2 handout 6.pdf')">Mod 3</div>
+    <div class="button" onclick="viewPDF('./notes/AEC Module 4.2 handout 7.pdf')">Mod 3</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_30.pdf')">Lecture 30</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_31.pdf')">Lecture 31</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_32 33.pdf')">Lecture 32,33</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_34.pdf')">Lecture 34</div>
+  </div>
+
+  <div class="viewer-container">
+    <embed src="./notes/AEC Module 4.1 handout 1.pdf" type="application/pdf" class="pdf-viewer" id="pdfViewer">
+  </div>
+
+  <script>
+    function viewPDF(pdfPath) {
+      document.getElementById('pdfViewer').src = pdfPath;
+    }
+  </script>
+
+</body>
+</html>

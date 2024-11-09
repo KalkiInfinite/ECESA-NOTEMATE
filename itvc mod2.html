@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Viewer</title>
+  <link rel="stylesheet" href="stylebookstore.css">
+  <link rel="stylesheet" href="notescss.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="button" onclick="viewPDF('./notes/1.introduction.pdf')">Intro</div>
+    <div class="button" onclick="viewPDF('./notes/2.Fourier Series in (0,2π).pdf')">0,2pi</div>
+    <div class="button" onclick="viewPDF('./notes/3.Fourier Series in (0, 2l).pdf')">0,2l</div>
+    <div class="button" onclick="viewPDF('./notes/Extra Questions on Fourier Transform..pdf')">Questions</div>
+    <div class="button" onclick="viewPDF('./notes/FI  FT formulas.pdf')">Formula</div>
+    <div class="button" onclick="viewPDF('./notes/6. notes/Fourier Series_Study Material.pdf')">Study Mat</div>
+    <div class="button" onclick="viewPDF('./notes/Fourier Transform.pdf')">Fourier Transform</div>
+  </div>
+
+
+  <div class="viewer-container">
+    <embed src="./notes/1.introduction.pdf" class="pdf-viewer" id="pdfViewer">
+  </div>
+
+  <script>
+    function viewPDF(pdfPath) {
+      document.getElementById('pdfViewer').src = pdfPath;
+    }
+  </script>
+
+</body>
+</html>

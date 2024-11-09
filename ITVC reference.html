@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Viewer</title>
+  <link rel="stylesheet" href="stylebookstore.css">
+  <link rel="stylesheet" href="notescss.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="button" onclick="viewPDF('./notes/G. V Kumbhojkar - Applied Mathematics 3.pdf')">
+        G. V Kumbhojkar
+    </div>
+   
+  </div>
+
+  <div class="viewer-container">
+    <embed
+      src="./notes/G. V Kumbhojkar - Applied Mathematics 3.pdf"
+      type="application/pdf"
+      class="pdf-viewer"
+      id="pdfViewer"
+      width="100%"
+      height="600px"
+    />
+  </div>
+
+  <script>
+    function viewPDF(pdfPath) {
+      document.getElementById("pdfViewer").src = pdfPath;
+    }
+  </script>
+
+</body>
+</html>

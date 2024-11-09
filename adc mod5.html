@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Viewer</title>
+  <link rel="stylesheet" href="stylebookstore.css">
+  <link rel="stylesheet" href="notescss.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="button" onclick="viewPDF('./notes/5. PSK.pdf')">PSK</div>
+    <div class="button" onclick="viewPDF('./notes/5. QPSK.pdf')">QPSK</div>
+    <div class="button" onclick="viewPDF('./notes/ISI.pdf')">ISI</div>
+    <div class="button" onclick="viewPDF('./notes/Module 5 Digital Modulation Schemes.pdf')">Dig Mod Schemes</div>
+    <div class="button" onclick="viewPDF('./notes/QAM 1.pdf')">QAM 1</div>
+    <div class="button" onclick="viewPDF('./notes/QAM.pdf')">QAM</div>
+
+  </div>
+
+  <div class="viewer-container">
+    <embed src="./notes/5. PSK.pdf" type="application/pdf" class="pdf-viewer" id="pdfViewer">
+  </div>
+
+  <script>
+    function viewPDF(pdfPath) {
+      document.getElementById('pdfViewer').src = pdfPath;
+    }
+  </script>
+
+</body>
+</html>

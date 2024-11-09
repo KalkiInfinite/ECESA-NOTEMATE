@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Viewer</title>
+  <link rel="stylesheet" href="stylebookstore.css">
+  <link rel="stylesheet" href="notescss.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="button" onclick="viewPDF('./notes/AEC module 3 basics part A.pdf')">Mod 3 </div>
+    <div class="button" onclick="viewPDF('./notes/AEC module 3 basics part B.pdf')">Mod 3</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_23.pdf')">Lecture 23</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_24.pdf')">Lecture 24</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_25a.pdf')">Lecture 25</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_25b.pdf')">Lecture 25</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_26.pdf')">Lecture 26</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_27a.pdf')">Lecture 27</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_27b.pdf')">Lecture 27</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_28.pdf')">Lecture 28</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_29a.pdf')">Lecture 29</div>
+    <div class="button" onclick="viewPDF('./notes/AEC_Lec_29b.pdf')">Lecture 29</div>
+  </div>
+
+  <div class="viewer-container">
+    <embed src="./notes/AEC module 3 basics part A.pdf" type="application/pdf" class="pdf-viewer" id="pdfViewer">
+  </div>
+
+  <script>
+    function viewPDF(pdfPath) {
+      document.getElementById('pdfViewer').src = pdfPath;
+    }
+  </script>
+
+</body>
+</html>

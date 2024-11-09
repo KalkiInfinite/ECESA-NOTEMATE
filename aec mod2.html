@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Viewer</title>
+  <link rel="stylesheet" href="stylebookstore.css">
+  <link rel="stylesheet" href="notescss.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="button" onclick="viewPDF('./notes/14.1.pdf')">Lecture 14 </div>
+    <div class="button" onclick="viewPDF('./notes/14.2.pdf')">Lecture 14</div>
+    <div class="button" onclick="viewPDF('./notes/14.3.pdf')">Lecture 14</div>
+    <div class="button" onclick="viewPDF('./notes/14.5.pdf')">Lecture 14</div>
+    <div class="button" onclick="viewPDF('./notes/15.1.pdf')">Lecture 15</div>
+    <div class="button" onclick="viewPDF('./notes/15.2.pdf')">Lecture 15</div>
+    <div class="button" onclick="viewPDF('./notes/16.1.pdf')">Lecture 16</div>
+    <div class="button" onclick="viewPDF('./notes/16.2.pdf')">Lecture 16</div>
+    <div class="button" onclick="viewPDF('./notes/16.3.pdf')">Lecture 16</div>
+    <div class="button" onclick="viewPDF('./notes/16.4.pdf')">Lecture 16</div>
+    <div class="button" onclick="viewPDF('./notes/16.5.pdf')">Lecture 16</div>
+    <div class="button" onclick="viewPDF('./notes/16.6.pdf')">Lecture 16</div>
+    <div class="button" onclick="viewPDF('./notes/16.7.pdf')">Lecture 16</div>
+    <div class="button" onclick="viewPDF('./notes/17.pdf')">Lecture 17</div>
+    <div class="button" onclick="viewPDF('./notes/18.pdf')">Lecture 18</div>
+    <div class="button" onclick="viewPDF('./notes/19.20.pdf')">Lecture 19</div>
+    <div class="button" onclick="viewPDF('./notes/20.1.pdf')">Lecture 20</div>
+    <div class="button" onclick="viewPDF('./notes/20.2.pdf')">Lecture 20</div>
+    <div class="button" onclick="viewPDF('./notes/20.3.pdf')">Lecture 20</div>
+    <div class="button" onclick="viewPDF('./notes/21.pdf')">Lecture 21</div>
+    <div class="button" onclick="viewPDF('./notes/21.1.pdf')">Lecture 21 </div>
+    <div class="button" onclick="viewPDF('./notes/21.2.pdf')">Lecture 21</div>
+    <div class="button" onclick="viewPDF('./notes/21.3.pdf')">Lecture 21</div>
+    <div class="button" onclick="viewPDF('./notes/21.4.pdf')">Lecture 21</div>
+    <div class="button" onclick="viewPDF('./notes/22.pdf')">Lecture 22</div>
+    <div class="button" onclick="viewPDF('./notes/AEC 23 details.pdf')">Lecture 23</div>
+    <div class="button" onclick="viewPDF('./notes/mosfet biasing.pdf')">Mosfet Biasing</div>
+  </div>
+
+  <div class="viewer-container">
+    <embed src="./notes/14.1.pdf" type="application/pdf" class="pdf-viewer" id="pdfViewer">
+  </div>
+
+  <script>
+    function viewPDF(pdfPath) {
+      document.getElementById('pdfViewer').src = pdfPath;
+    }
+  </script>
+
+</body>
+</html>

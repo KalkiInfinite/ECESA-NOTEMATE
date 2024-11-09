@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Viewer</title>
+  <link rel="stylesheet" href="stylebookstore.css">
+  <link rel="stylesheet" href="notescss.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="button" onclick="viewPDF('./notes/Module_4.1_Indexing in Databases (1).pdf')">Mod 4</div>
+    <div class="button" onclick="viewPDF('./notes/ch11.pdf')">Chapter 11</div>
+    <div class="button" onclick="viewPDF('./notes/ch12.pdf')">Chapter 12</div>
+  </div>
+
+  <div class="viewer-container">
+    <embed src="./notes/Module_4.1_Indexing in Databases (1).pdf" type="application/pdf" class="pdf-viewer" id="pdfViewer">
+  </div>
+
+  <script>
+    function viewPDF(pdfPath) {
+      document.getElementById('pdfViewer').src = pdfPath;
+    }
+  </script>
+
+</body>
+</html>
