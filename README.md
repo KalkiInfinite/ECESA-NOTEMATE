@@ -38,6 +38,3 @@ The NoteMate section is divided into:
 
 ---
 
-
-## Acknowledgments  
-A big thank you to all contributors who have made NoteMate a reality. Your efforts help build a stronger academic community!  
